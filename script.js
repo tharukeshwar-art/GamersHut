@@ -1,59 +1,27 @@
-// ============================
-// Mobile Navbar
-// ============================
-
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+if(menuBtn){
 
-// ============================
-// Typing Animation
-// ============================
-
-const typing = document.querySelector(".typing");
-
-if (typing) {
-
-  setInterval(() => {
-
-    typing.style.opacity =
-      typing.style.opacity === "0.3"
-      ? "1"
-      : "0.3";
-
-  }, 700);
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
 }
 
-// ============================
-// Glow Hover Effect
-// ============================
+function showSection(sectionId){
 
-const cards = document.querySelectorAll(".glass-card");
+  const sections =
+    document.querySelectorAll(".page-section");
 
-cards.forEach(card => {
+  sections.forEach(section => {
 
-  card.addEventListener("mousemove", e => {
-
-    const x = e.offsetX;
-    const y = e.offsetY;
-
-    card.style.background = `
-      radial-gradient(circle at ${x}px ${y}px,
-      rgba(127,90,240,0.3),
-      rgba(255,255,255,0.05))
-    `;
+    section.classList.remove("active-section");
 
   });
 
-  card.addEventListener("mouseleave", () => {
+  document
+    .getElementById(sectionId)
+    .classList.add("active-section");
 
-    card.style.background =
-      "rgba(255,255,255,0.06)";
-
-  });
-
-});
+}
