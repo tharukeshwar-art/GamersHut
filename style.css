@@ -21,9 +21,7 @@ body{
   overflow:hidden;
 }
 
-/* =========================
-   Slide System
-========================= */
+
 
 .page-section{
   display:none;
@@ -35,9 +33,7 @@ body{
   display:block;
 }
 
-/* =========================
-   Background
-========================= */
+
 
 .bg-grid{
   position:fixed;
@@ -83,9 +79,7 @@ body::before{
 
 }
 
-/* =========================
-   Navbar
-========================= */
+
 
 .navbar{
   position:sticky;
@@ -139,9 +133,7 @@ body::before{
   color:white;
 }
 
-/* =========================
-   Hero
-========================= */
+
 
 .hero{
   min-height:90vh;
@@ -185,9 +177,7 @@ body::before{
   flex-wrap:wrap;
 }
 
-/* =========================
-   Buttons
-========================= */
+
 
 .btn{
   padding:14px 28px;
@@ -228,9 +218,6 @@ body::before{
   color:black;
 }
 
-/* =========================
-   Sections
-========================= */
 
 .section{
   padding:80px 5%;
@@ -244,9 +231,6 @@ body::before{
   text-align:center;
 }
 
-/* =========================
-   Glass Cards
-========================= */
 
 .glass-card{
   background:var(--glass);
@@ -270,9 +254,6 @@ body::before{
   box-shadow:0 0 25px rgba(127,90,240,.4);
 }
 
-/* =========================
-   About
-========================= */
 
 .about-grid{
   display:grid;
@@ -283,9 +264,6 @@ body::before{
   gap:2rem;
 }
 
-/* =========================
-   Gamer Cards
-========================= */
 
 .gamer-grid{
   margin-top:2rem;
@@ -348,9 +326,7 @@ body::before{
   background:rgba(127,90,240,.2);
 }
 
-/* =========================
-   Dashboard
-========================= */
+
 
 .dashboard-grid{
   display:grid;
@@ -371,9 +347,6 @@ body::before{
   color:var(--accent);
 }
 
-/* =========================
-   Chat
-========================= */
 
 .chat-layout{
   display:grid;
@@ -467,9 +440,7 @@ body::before{
   color:white;
 }
 
-/* =========================
-   Notifications
-========================= */
+
 
 .notifications-grid{
   display:grid;
@@ -480,9 +451,7 @@ body::before{
   border-left:4px solid var(--accent);
 }
 
-/* =========================
-   Forms
-========================= */
+
 
 .profile-form form,
 .auth-box form{
@@ -533,9 +502,6 @@ textarea{
   cursor:pointer;
 }
 
-/* =========================
-   Responsive
-========================= */
 
 @media(max-width:900px){
 
